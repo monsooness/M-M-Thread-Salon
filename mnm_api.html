@@ -3,14 +3,22 @@
 <head>
 <title>M&M Thread Salon</title>
 <meta charset="UTF-8">
+
+<style>
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+</style>
 </head>
 <body>
 
 <!-- The facebook API code:-->
+
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button><br>
+</fb:login-button><br><br><br>
 
-
+<h1>
     Total Sale:
     <input type="text" name="total_sale"> 
     <br>
@@ -31,6 +39,10 @@
     <br>
     Work hours:
     <input type="text" name="hours_work">
+
+</h1>
+
+
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
